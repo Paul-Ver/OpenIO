@@ -43,6 +43,10 @@ But I don't want to get blinded by my spots if I have to get up in the middle of
 
 I could also specify the lights to go on whenever my android phones alarm goes of (if I hook to the alarm app to send a HTTP message to my server). Bonus, if I use the local address of my server, my lights won't go on when I'm not at home (not connected to wifi).
 
+### API
+
+The server should also have an API to manually trigger actions.
+
 ## Client
 
 A client can be any device and doesn't need any specific protocol or connection. Since the server can be extended to accept any form of communication and can be configured to understand messages, it allows for any device to be connected. Making it possible to use any existing hardware without having to reprogram it. Optionally, clients have autodiscovery, but this is required since not all devices have such a thing implemented.
@@ -69,3 +73,28 @@ actions:  [{name:"Set indication LED on", message:"output=high&id=1", connection
 ```
 
 This object (probably in JSON, but we could make an abstract parser that can also handle xml) will be sent to the server by the client. In this way the server knows which transmission layer to use and what messages to send, to get the desired behaviour.
+
+
+## Web interface
+
+### Manual control and observation
+
+Within the web interface it's possible to see (some) of the sensors and manually control outputs.
+These may be divided in "zones" to represent their physical position.
+Another option would be to add IP camera's and/or live-tv video streams.
+
+### Configuration
+
+Within the web interface it's possible to configure the event-requirement-action statements.
+As well as defining the events and actions themselves.
+
+### Logging
+
+The web interface should have built-in support for logging temperatures, wind speeds etc.
+You can also see the history of all events, so you can, for example see at what times your doorbell rang.
+
+## Access from outside (and security)
+
+The system should be able to run on it's own and not rely on an external server.
+You could port forward the system, but this is considered unsafe.
+You should use a VPN or other safe way to connect to your home network.
