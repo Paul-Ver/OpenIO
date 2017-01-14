@@ -81,7 +81,7 @@ This object (probably in JSON, but we could make an abstract parser that can als
 
 Within the web interface it's possible to see (some) of the sensors and manually control outputs.
 These may be divided in "zones" to represent their physical position.
-Another option would be to add IP camera's and/or live-tv video streams.
+Another option would be to add IP camera's and/or live-tv video streams or even displaying video from a local NAS or other source (and controlling Kodi/chromecast and casting the source to it).
 
 ### Configuration
 
