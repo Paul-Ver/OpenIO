@@ -1,8 +1,10 @@
 # OpenIO
 
 OpenIO is an opensource, openhardware I/O control initiative.
-OpenIO focusses on creating an abstract, cross platform way of controlling devices.
 
+OpenIO focusses on creating an abstract, cross platform, event driven way of controlling devices.
+
+Which ultimately is configurable from within a browser.
 Currently openIO is only a concept, but I'm thinking of creating a NodeJS implementation of it.
 
 # Architecture
